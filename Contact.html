@@ -65,16 +65,17 @@
         <div class="contact-containter">
           <div class="card-container">
             <div class="card">
+              <br/>
               <img src="./img/Icons/email.png" > 
               <h3>Email</h3>
               <hr>
-    <p>          tlee1477@hotmail.com</p>
-    
+    <p>tlee1477@hotmail.com</p>
             </div>
           </div>
 
         <div class="card-container">
           <div class="card">
+            <br/>
             <img src="./img/Icons/whatsapp.png" alt=""><h3>Text/Call Us</h3>
             <hr>
             <p>
@@ -138,13 +139,13 @@
                   <input
                     type="tel"
                     name="Contact"
-                    placeholder="91234567"
+                    placeholder="E.g. 91234567"
                     pattern="[8-9]{1}[0-9]{7}" required title="Enter a Valid Singapore Mobile Number"   class="form-input-size"
                   />
                 </div>
         
                 <div class="form-input">
-                  <p>Type of Staging Required</p>
+                  <p>Type of Staging</p>
                   <select name="Type" id="dropdown" class="form-input-size" required>
                     <option value="Timber">Timber Scaffolding</option>
                     <option value="Alumninum">Alumninum Scaffolding</option>
@@ -153,11 +154,11 @@
                 </div>
         
                 <div class="form-input">
-                  <p>Other Information about your project</p>
+                  <p>Other Relevant Information</p>
                   <textarea
                     type="text"
                     name="OtherInfo"
-                    placeholder="Enter Any Other Information about your Project Here"
+                    placeholder="Any Other Relevant Information"
                   ></textarea>
                 </div>
         
@@ -169,14 +170,23 @@
             </div>
         </div>
       </div>
-    </div>
+    <br/>
+    <br/>
     
-    <br/>
-    <br/>
     <footer>
-      <h1>Lee Baw Seng Chinese Oprea Stage Builder&trade; 2021</h1>
-      
-      <div class="credits">Developed by <a href="#">Sheen Kerr</a></div>
+      <h1>
+        Lee Baw Seng Chinese Oprea Stage Builder
+        <span id="year"></span>&trade;
+      </h1>
+
+      <div class="credits">
+        Developed by
+        <a href="https://www.linkedin.com/in/sheenkerr/">Sheen Kerr</a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
+<script>
+  // Set Footer Year
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>

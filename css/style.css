@@ -536,11 +536,26 @@ button#submit:hover {
 }
 
 /* Media Queries (Mobile View) */
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .form-container {
     max-width: 540px;
   }
 }
+/* Media Queries (Mobile View) */
+@media (max-width: 645px) {
+  .contactUs-container {
+    display: inline-block;
+  }
+}
+/* Media Queries (Mobile View) */
+@media (max-width: 945px) {
+  .card-container {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
 /* Media Queries (Tablet View) */
 @media (max-width: 768px) {
   /* Global */
@@ -602,15 +617,6 @@ button#submit:hover {
   }
 
   /* Responsive card-containers (Contact Us)*/
-  .card-container {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  .contactUs-container {
-    display: inline-block;
-  }
 
   .form-container {
     max-width: 720px;
