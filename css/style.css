@@ -1,4 +1,7 @@
 /* Global */
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
   margin: 0px;
