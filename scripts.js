@@ -12,7 +12,7 @@ function CloseHamburgerMenu() {
 
 // Form Submission
 function Success() {
-  document.getElementById("survey-form").style.display = "none";
+  document.getElementById("contact-form").style.display = "none";
   document.getElementById("success-msg").style.display = "block";
 }
 

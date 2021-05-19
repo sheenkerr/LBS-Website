@@ -470,11 +470,12 @@ img.hover-shadow {
   border-radius: 0.3rem;
 }
 #success-msg {
-  background-color: black;
+  background-color:  #04AA6D;;
   /* rgba(21, 20, 85, 0.7) */
   padding: 2.3rem 0.5rem;
   border-radius: 0.3rem;
   display: none;
+  color: white;
 }
 
 .form-input {
