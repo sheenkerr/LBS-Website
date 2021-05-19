@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="./scripts.js"></script>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+      <title>LBS | Contact Us</title>
+      <link rel="stylesheet" href="./css/style.css" />
+      <link rel="icon" href="./img/logo.png" type="image/icon type" />
+    </head>
+    <body>
+      <header>
+        <a href="./index">
+          <img class="logo-img" alt="logo" src="./img/logo.png" />
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a class="nav-link" href="./About">About Us</a></li>
+            <li><a class="nav-link" href="./Services">Our Services</a></li>
+            <li><a class="nav-link" href="./Contact">Contact Us</a></li>
+            <li><a class="nav-link" href="./Estimator">Price Estimator</a></li>
+          </ul>
+        </nav>
+        <a
+          href="javascript:void(0);"
+          onclick="HamburgerMenu()"
+          class="hamburger-menu"
+        >
+          <img alt="HamburgerMenu" src="./img/menu.png" />
+        </a>
+  
+        <!-- Mobile Menu -->
+        <div id="mobile-menu">
+          <div class="mobile-menu-content">
+            <a
+              href="javascript:void(0);"
+              onclick="CloseHamburgerMenu()"
+              class="hamburger-menu"
+            >
+              <img alt="Close Menu" src="./img/close.png" />
+            </a>
+            <ul>
+              <li><a class="nav-link" href="./About">About Us</a></li>
+              <li><a class="nav-link" href="./Services">Our Services</a></li>
+              <li><a class="nav-link" href="./Contact">Contact Us</a></li>
+              <li><a class="nav-link" href="./Estimator">Price Estimator</a></li>
+               </ul>
+          </div>
+        </div>
+      </header>
+
+  <body>
+    <div class="home-container">
+      <h1>Contact Us</h1>
+      <hr>
+      <p>
+        Monday to Saterday (excluding Public Holidays): 9am – 6pm
+      </p>
+    </div>
+    <div class="contactUs-container">
+      <div class="contactUs-child">
+        <h2>Other Contact Information</h2>
+      <h3>  Contact Person: <span style="font-weight: 500;"> Terry Lee </span></h3>
+        <div class="contact-containter">
+          <div class="card-container">
+            <div class="card">
+              <img src="./img/Icons/email.png" > 
+              <h3>Email</h3>
+              <hr>
+    <p>          tlee1477@hotmail.com</p>
+    
+            </div>
+          </div>
+
+        <div class="card-container">
+          <div class="card">
+            <img src="./img/Icons/whatsapp.png" alt=""><h3>Text/Call Us</h3>
+            <hr>
+            <p>
+          (+65) 93841016 
+        </p>
+          </div>
+        </div>
+        </div>
+        </div>        
+        <div class="contactUs-child">
+          <h2>Contact Form</h2>         
+            <div class="form-container">
+              <div id="success-msg">
+                <b> Thank you for getting in touch!</b><br /><br />
+                We appreciate you contacting us! 
+                One of our colleagues will get back in touch with you soon! <br />
+                Have a great day! <br />
+              </div>
+              <iframe name="dummyframe" id="dummyframe" onchange="Success()"></iframe>
+              <form
+                id="contact-form"
+                target="dummyframe"
+                method="POST"
+                action="https://script.google.com/macros/s/AKfycbx8zpm8W4oiQnl9mK2GMTl7iIEtq2t1sPYFUKaLy_zxMcTQgg/exec"
+                >
+                <div class="form-input">
+                  <label>Your Name</label>
+                  <input
+                    type="text"
+                    name="Name"
+                    placeholder="Enter your name"
+                    class="form-input-size"
+                    required
+                  />
+                </div>
+                <div class="form-input">
+                  <label>Enter the Address</label>
+                  <input
+                    type="text"
+                    name="Address"
+                    placeholder="Enter your Address"
+                    class="form-input-size"
+                    required
+                  />
+                </div>
+                <div class="form-input">
+                  <label>Start Date of Project</label>
+                  <input
+                    type="date"
+                    name="StartDate"
+                    class="form-input-size"
+                    required
+                  />
+                </div>
+                <div class="form-input">
+                  <label>End Date of Project</label>
+                  <input type="date" name="EndDate" class="form-input-size" required />
+                </div>
+                <div class="form-input">
+                  <label>Phone Number (+65)</label>
+                  <input
+                    type="tel"
+                    name="Contact"
+                    placeholder="91234567"
+                    pattern="[8-9]{1}[0-9]{7}" required title="Enter a Valid Singapore Mobile Number"   class="form-input-size"
+                  />
+                </div>
+        
+                <div class="form-input">
+                  <p>Type of Staging Required</p>
+                  <select name="Type" id="dropdown" class="form-input-size" required>
+                    <option value="Timber">Timber Scaffolding</option>
+                    <option value="Alumninum">Alumninum Scaffolding</option>
+                    <option value="Opera">Chinese Opera House</option>
+                  </select>
+                </div>
+        
+                <div class="form-input">
+                  <p>Other Information about your project</p>
+                  <textarea
+                    type="text"
+                    name="OtherInfo"
+                    placeholder="Enter Any Other Information about your Project Here"
+                  ></textarea>
+                </div>
+        
+                <div class="form-input">
+                  <button type="submit" id="submit">Submit</button>
+                </div>
+        
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <br/>
+    <br/>
+    <footer>
+      <h1>Lee Baw Seng Chinese Oprea Stage Builder&trade; 2021</h1>
+      
+      <div class="credits">Developed by <a href="#">Sheen Kerr</a></div>
+    </footer>
+</body>
+</html>

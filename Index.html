@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <script src="./scripts.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="LBS" />
+    <meta name="keywords" content="LBS" />
+    <meta name="author" content="Sheen Kerr" />
+    <title>LBS | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="/img/logo.png" type="image/icon type" />
+  </head>
+  <body>
+    <header>
+      <a href="./index">
+        <img class="logo-img" alt="logo" src="./img/logo.png" />
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="./About">About Us</a></li>
+          <li><a class="nav-link" href="./Services">Our Services</a></li>
+          <li><a class="nav-link" href="./Contact">Contact Us</a></li>
+          <li><a class="nav-link" href="./Estimator">Price Estimator</a></li>
+        </ul>
+      </nav>
+      <a
+        href="javascript:void(0);"
+        onclick="HamburgerMenu()"
+        class="hamburger-menu"
+      >
+        <img alt="HamburgerMenu" src="./img/menu.png" />
+      </a>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu">
+        <div class="mobile-menu-content">
+          <a
+            href="javascript:void(0);"
+            onclick="CloseHamburgerMenu()"
+            class="hamburger-menu"
+          >
+            <img alt="Close Menu" src="./img/close.png" />
+          </a>
+          <ul>
+            <li><a class="nav-link" href="./About">About Us</a></li>
+            <li><a class="nav-link" href="./Services">Our Services</a></li>
+            <li><a class="nav-link" href="./Contact">Contact Us</a></li>
+            <li><a class="nav-link" href="./Estimator">Price Estimator</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="home-container">
+        <h1>Lee Baw Seng Chinese Opera Stage Builder</h1>
+        <hr />
+        <p>Scaffolding Rental Services (Core Services)</p>
+        <p>
+          <b> Office hours:</b> <br />
+          Monday to Saterday (excluding Public Holidays): 9am – 6pm
+        </p>
+        <br />
+        <a href="./Contact" class="button">Get Quotation</a>
+      </div>
+
+      <div class="services-container">
+        <h2>Our Services</h2>
+        <p>Description of Services</p>
+      </div>
+      <br />
+      <div class="services-galley">
+        <a href="#" class="service">
+          <img src="./img/Timber/d.jpg" alt="" />
+          <p>Specialized Timber Scaffolding</p>
+        </a>
+        <br />
+        <a href="#" class="service">
+          <img src="./img/Al/d.jpg" alt="" />
+          <p>Aluminum Mobile Scaffolding</p>
+        </a>
+        <br />
+        <a href="#" class="service">
+          <img src="./img/Specialized/d.jpg" alt="" />
+          <p>Specialized Services (Chinese Opera Stage)</p>
+        </a>
+      </div>
+      <br />
+    </main>
+
+    <footer>
+      <h1>
+        Lee Baw Seng Chinese Oprea Stage Builder
+        <span id="year"></span>&trade;
+      </h1>
+
+      <div class="credits">
+        Developed by
+        <a href="https://www.linkedin.com/in/sheenkerr/">Sheen Kerr</a>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  // Set Footer Year
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>

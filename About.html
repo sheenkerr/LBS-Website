@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<link rel="stylesheet" href="./css/style.css">
+<script src="./scripts.js"></script>
+
+<title>LBS | About Us</title>
+<link rel="icon" href="/img/logo.png" type="image/icon type" />
+<header>
+  <a href="./index">
+    <img class="logo-img" alt="logo" src="./img/logo.png" />
+  </a>
+  <nav>
+    <ul class="nav-links">
+      <li><a class="nav-link" href="./About">About Us</a></li>
+      <li><a class="nav-link" href="./Services">Our Services</a></li>
+      <li><a class="nav-link" href="./Contact">Contact Us</a></li>
+      <li><a class="nav-link" href="./Estimator">Price Estimator</a></li>
+    </ul>
+  </nav>
+  <a
+    href="javascript:void(0);"
+    onclick="HamburgerMenu()"
+    class="hamburger-menu"
+  >
+    <img alt="HamburgerMenu" src="./img/menu.png" />
+  </a>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu">
+    <div class="mobile-menu-content">
+      <a
+        href="javascript:void(0);"
+        onclick="CloseHamburgerMenu()"
+        class="hamburger-menu"
+      >
+        <img alt="Close Menu" src="./img/close.png" />
+      </a>
+      <ul>
+        <li><a class="nav-link" href="./About">About Us</a></li>
+        <li><a class="nav-link" href="./Services">Our Services</a></li>
+        <li><a class="nav-link" href="./Contact">Contact Us</a></li>
+        <li><a class="nav-link" href="./Estimator">Price Estimator</a></li>
+         </ul>
+    </div>
+  </div>
+</header>
+<div class="home-container">
+  <h1>About Us</h1>
+  <hr />
+  </div>
+
+  <div class="services-container">
+    <h2>Who We Are</h2>
+    <p>Blah Blah Blah</p>
+  </div>
+
+  <br/>
+<div class="galley-container">
+  <div class="cert">
+    <img
+    src="./img/Certs/BizSafe Level 3 Certificate.jpg"
+  onclick="openModal();currentSlide(1)" class="hover-shadow cursor"  alt="BizSafe Level 3 Certificate" />
+  </div>
+  <div class="cert">
+  <img
+    src="./img/Certs/MOM Approved Scaffold Contractor (ASC) Cert.jpg"
+  onclick="openModal();currentSlide(2)" class="hover-shadow cursor"  alt="MOM Approved Scaffold Contractor (ASC) Cert" />
+</div>
+
+<div class="cert">
+  <img
+    src="./img/Certs/Safety & Green Management Assessor Scheme.jpg"
+  onclick="openModal();currentSlide(3)" class="hover-shadow cursor"  alt="Safety & Green Management Assessor Scheme" />
+</div>
+  <div class="cert">
+  <img
+    src="./img/Certs/The Singapore Contractors Association Limited (SCAL).jpg"
+  onclick="openModal();currentSlide(4)" class="hover-shadow cursor"  alt="The Singapore Contractors Association Limited (SCAL)" />
+  </div></div>
+</div>
+
+<!-- Modal -->
+<div id="imgModal" class="modal" >
+  <div class="certModal-content">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="imgSlides" >
+      <div class="numbertext">1 / 4</div>
+      <img src="./img/Certs/BizSafe Level 3 Certificate.jpg" alt="BizSafe Level 3 Certificate"   >
+    </div>
+
+    <div class="imgSlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./img/Certs/MOM Approved Scaffold Contractor (ASC) Cert.jpg" alt="MOM Approved Scaffold Contractor (ASC) Certificate" >
+    </div>
+
+    <div class="imgSlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./img/Certs/Safety & Green Management Assessor Scheme.jpg" alt="Safety & Green Management Assessor Scheme" >
+    </div>
+    
+    <div class="imgSlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./img/Certs/The Singapore Contractors Association Limited (SCAL).jpg" alt="The Singapore Contractors Association Limited (SCAL)">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>    
+    <footer>
+      <h1>
+        Lee Baw Seng Chinese Oprea Stage Builder
+        <span id="year"></span>&trade;
+      </h1>
+
+      <div class="credits">
+        Developed by
+        <a href="https://www.linkedin.com/in/sheenkerr/">Sheen Kerr</a>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  // Set Footer Year
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>

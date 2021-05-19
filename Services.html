@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<link rel="stylesheet" href="./css/style.css">
+<script src="./scripts.js"></script>
+<title>LBS | Our Services</title>
+<link rel="icon" href="/img/logo.png" type="image/icon type" />
+<header>
+  <a href="./index">
+    <img class="logo-img" alt="logo" src="./img/logo.png" />
+  </a>
+  <nav>
+    <ul class="nav-links">
+      <li><a class="nav-link" href="./About">About Us</a></li>
+      <li><a class="nav-link" href="./Services">Our Services</a></li>
+      <li><a class="nav-link" href="./Contact">Contact Us</a></li>
+      <li><a class="nav-link" href="./Estimator">Price Estimator</a></li>
+    </ul>
+  </nav>
+  <a
+    href="javascript:void(0);"
+    onclick="HamburgerMenu()"
+    class="hamburger-menu"
+  >
+    <img alt="HamburgerMenu" src="./img/menu.png" />
+  </a>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu">
+    <div class="mobile-menu-content">
+      <a
+        href="javascript:void(0);"
+        onclick="CloseHamburgerMenu()"
+        class="hamburger-menu"
+      >
+        <img alt="Close Menu" src="./img/close.png" />
+      </a>
+      <ul>
+        <li><a class="nav-link" href="./About">About Us</a></li>
+        <li><a class="nav-link" href="./Services">Our Services</a></li>
+        <li><a class="nav-link" href="./Contact">Contact Us</a></li>
+        <li><a class="nav-link" href="./Estimator">Price Estimator</a></li>
+         </ul>
+    </div>
+  </div>
+</header>
+<div class="home-container">
+  <h1>Our Services/Past Projects</h1>
+  <hr>
+</div>
+
+<div class="services-container">
+  <h2>Timber Staffolding Projects</h2>
+  <p>Description of Services</p>
+</div>
+<br />
+
+<div class="galley-container">
+  <div class="galley-Imgs">
+    <img
+    src="./img/Timber/1.png"
+  onclick="openTimberModal();currentTimberSlide(1)" class="hover-shadow cursor"   />
+  </div>
+  <div class="galley-Imgs">
+  <img
+    src="./img/Timber/2.jpg"
+  onclick="openTimberModal();currentTimberSlide(2)" class="hover-shadow cursor"   />
+</div>
+
+<div class="galley-Imgs">
+  <img
+    src="./img/Timber/3.jpg"
+  onclick="openTimberModal();currentTimberSlide(3)" class="hover-shadow cursor"   />
+</div>
+  <div class="galley-Imgs">
+  <img
+    src="./img/Timber/4.jpg"
+  onclick="openTimberModal();currentTimberSlide(4)" class="hover-shadow cursor"   />
+  </div>
+  <div class="galley-Imgs">
+  <img
+    src="./img/Timber/5.jpg"
+  onclick="openTimberModal();currentTimberSlide(5)" class="hover-shadow cursor"   />
+  </div>
+  <div class="galley-Imgs">
+  <img
+    src="./img/Timber/6.jpg"
+  onclick="openTimberModal();currentTimberSlide(6)" class="hover-shadow cursor"   />
+  </div>
+</div>
+</div>
+<!-- Timber Modal -->
+<div id="TimberModal" class="modal" >
+  <div class="modal-content">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="imgSlides timberSlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="./img/Timber/1.png" 
+   >
+    </div>
+    <div class="imgSlides timberSlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="./img/Timber/2.jpg" >    </div>
+
+    <div class="imgSlides timberSlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="./img/Timber/3.jpg" 
+ >
+    </div>
+    
+    <div class="imgSlides timberSlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="./img/Timber/4.jpg" >
+    </div>
+    <div class="imgSlides timberSlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="./img/Timber/5.jpg" >
+    </div>
+    <div class="imgSlides timberSlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="./img/Timber/6.jpg" >
+    </div>
+    
+    <a class="prev" onclick="plusTimberSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusTimberSlides(1)">&#10095;</a>
+  </div>
+</div>
+<div class="services-container">
+  <h2>Specialized Services (Chinese Opera)</h2>
+  <p>Description of Services</p>
+</div>
+<br />
+
+<div class="galley-container">
+  <div class="galley-Imgs">
+    <img
+    src="./img/Specialized/main.jpg"
+  onclick="openSpecialModal();currentSpecialSlide(1)" class="hover-shadow cursor"   />
+  </div>
+  <div class="galley-Imgs">
+  <img
+    src="./img/Specialized/1.jpg"
+  onclick="openSpecialModal();currentSpecialSlide(2)" class="hover-shadow cursor"   />
+</div>
+</div>
+<!-- Specialized Services Modal -->
+<div id="SpecialModal" class="modal" >
+  <div class="modal-content">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="imgSlides specialSlides">
+      <div class="numbertext">1 / 2</div>
+      <img src="./img/Specialized/main.jpg" 
+   >
+    </div>
+    <div class="imgSlides specialSlides">
+      <div class="numbertext">2 / 2</div>
+      <img src="./img/Specialized/1.jpg" >    </div>
+      <a class="prev" onclick="plusSpecialSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSpecialSlides(1)">&#10095;</a>
+    </div>
+    </div>
+<div class="services-container">
+  <h2>Aluminum Scaffolding</h2>
+  <p>Description of Services</p>
+</div>
+<br />
+
+<div class="galley-container">
+  <div class="galley-Imgs">
+    <img
+    src="./img/Al/Main.jpg"
+  onclick="openAlModal();currentAlSlide(1)" class="hover-shadow cursor" style="max-height: 400px; width: auto;"  />
+  </div>
+</div>
+<!-- Aluminum Services Modal -->
+<div id="AlModal" class="modal" >
+  <div class="modal-content" style="padding:0;margin-top: 0;">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="imgSlides AlSlides">
+      <div class="numbertext">1 / 1</div>
+      <img src="./img/Al/Main.jpg"
+   >
+    </div>
+    </div>
+
+    <footer>
+      <h1>
+        Lee Baw Seng Chinese Oprea Stage Builder
+        <span id="year"></span>&trade;
+      </h1>
+
+      <div class="credits">
+        Developed by
+        <a href="https://www.linkedin.com/in/sheenkerr/">Sheen Kerr</a>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  // Set Footer Year
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
