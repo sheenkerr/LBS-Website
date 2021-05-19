@@ -436,15 +436,16 @@ img.hover-shadow {
   margin-top: 5%;
 }
 .card hr {
-  width: 50%;
+  width: 40%;
   margin: auto;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
-/* .card a{
-  background-color: black;
-  color: white;
-  padding: 5%;
-} */
+.card a {
+  color: black;
+}
+.card a:hover {
+  opacity: 0.8;
+}
 .card img {
   width: 40px;
   height: auto;
@@ -470,7 +471,7 @@ img.hover-shadow {
   border-radius: 0.3rem;
 }
 #success-msg {
-  background-color:  #04AA6D;;
+  background-color: #04aa6d;
   /* rgba(21, 20, 85, 0.7) */
   padding: 2.3rem 0.5rem;
   border-radius: 0.3rem;
