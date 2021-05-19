@@ -546,6 +546,7 @@ button#submit:hover {
   .contactUs-container {
     display: inline-block;
     width: 450px;
+    max-width: 100%;
   }
 }
 /* Media Queries (Mobile View) */
