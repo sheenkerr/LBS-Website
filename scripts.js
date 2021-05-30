@@ -19,6 +19,7 @@ function Success() {
 // About Us
 function openModal() {
   document.getElementById("imgModal").style.display = "block";
+  document.querySelector("main").style = "display:none";
   // Get the modal
   var modal = document.getElementById("imgModal");
 
@@ -26,12 +27,14 @@ function openModal() {
   window.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = "none";
+      document.getElementById("success-msg").style.display = "block";
     }
   };
 }
 
 function closeModal() {
   document.getElementById("imgModal").style.display = "none";
+  document.getElementById("success-msg").style.display = "block";
 }
 
 var slideIndex = 1;
