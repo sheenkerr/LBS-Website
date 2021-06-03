@@ -53,7 +53,7 @@ nav {
   height: 100px;
 }
 .nav-links {
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
 }
 .nav-link {
