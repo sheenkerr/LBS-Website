@@ -1,3 +1,11 @@
+// G Analytics
+function GAnalytics(){
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-W9TP9BL82P');
+}
 // Mobile Menu
 function HamburgerMenu() {
   document.getElementById("mobile-menu").style.display = "block";
