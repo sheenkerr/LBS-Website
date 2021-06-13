@@ -141,7 +141,7 @@ function showSpecialSlides(n) {
   }
   slides[specialSlideIndex - 1].style.display = "block";
 }
-// Aluminum
+// Aluminium
 var alSlideIndex = 1;
 
 function openAlModal() {
