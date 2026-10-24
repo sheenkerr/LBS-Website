@@ -1,204 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>    
-    <script src="./scripts.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-W9TP9BL82P"
-    ></script>
-    <script>
-      GAnalytics();
-    </script>
-
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="LBS" />
-    <meta name="keywords" content="LBS" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W9TP9BL82P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-W9TP9BL82P");
+    </script>
+    <script src="./scripts.js" defer></script>
+    <meta
+      name="description"
+      content="Contact Terry Lee at Lee Baw Seng (LBS) for a scaffolding quote. WhatsApp or call (+65) 9384 1016. Open Mon–Fri 9 am–5 pm, Sat 9 am–1 pm."
+    />
     <meta name="author" content="Sheen" />
     <title>LBS | Contact Us</title>
+    <link rel="canonical" href="https://www.lbs-scaffold.com/Contact" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Lee Baw Seng Scaffolding" />
+    <meta property="og:title" content="Contact Terry Lee — Lee Baw Seng" />
+    <meta
+      property="og:description"
+      content="WhatsApp or call (+65) 9384 1016 for a quote, or just to ask a question."
+    />
+    <meta property="og:url" content="https://www.lbs-scaffold.com/Contact" />
+    <meta property="og:image" content="https://www.lbs-scaffold.com/img/Specialized/Main.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;700&family=Noto+Serif+SC:wght@600;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./img/Icons/logo.ico" type="image/x-icon" />
   </head>
- 
-    <body>
-      <header>
-        <a href="./index">
-          <img class="logo-img" alt="logo" src="./img/logo.png" />
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="./">
+          <img src="./img/logo-136.png" alt="Lee Baw Seng logo" width="56" height="56" />
+          <span>Lee Baw Seng</span>
         </a>
-        <nav>
-          <ul class="nav-links">
-            <li><a class="nav-link" href="./About">About Us</a></li>
-            <li><a class="nav-link" href="./Services">Our Services</a></li>
-            <li><a class="nav-link  active" href="./Contact">Contact Us</a></li>
-            <li><a class="nav-link" href="./Estimator">Price Estimator</a></li>
+        <nav aria-label="Main">
+          <ul class="nav">
+            <li><a href="./"><span>Home</span><span lang="zh-Hans">首页</span></a></li>
+            <li><a href="./Services"><span>Services</span><span lang="zh-Hans">服务</span></a></li>
+            <li><a href="./About"><span>About</span><span lang="zh-Hans">关于我们</span></a></li>
+            <li><a href="./Contact" aria-current="page"><span>Contact</span><span lang="zh-Hans">联系我们</span></a></li>
           </ul>
         </nav>
-        <a
-          href="javascript:void(0);"
-          onclick="HamburgerMenu()"
-          class="hamburger-menu"
-        >
-          <img alt="HamburgerMenu" src="./img/menu.png" />
-        </a>
-  
-        <!-- Mobile Menu -->
-        <div id="mobile-menu">
-          <div class="mobile-menu-content">
-            <a
-              href="javascript:void(0);"
-              onclick="CloseHamburgerMenu()"
-              class="hamburger-menu"
-            >
-              <img alt="Close Menu" src="./img/close.png" />
-            </a>
-            <ul>
-              <li><a class="nav-link" href="./About">About Us</a></li>
-              <li><a class="nav-link" href="./Services">Our Services</a></li>
-              <li><a class="nav-link active" href="./Contact">Contact Us</a></li>
-              <li><a class="nav-link" href="./Estimator">Price Estimator</a></li>
-               </ul>
-          </div>
-        </div>
-      </header>
+      </div>
+    </header>
 
-  <body>
-    <div class="home-container">
-      <h1>Contact Us</h1>
-      <hr>
-      <p>
-        Monday to Friday (excluding Public Holidays): 9 am to 5 pm <br/>
-        Saturday: 9 am to 1 pm
-</p>
-    </div>
-    
-    <div class="contactUs-container">
-      <div class="contactUs-child">
-        <h2>Other Contact Information</h2>
-      <h3>  Contact Person: <span style="font-weight: 500;"> Terry Lee </span></h3>
-        <div class="contact-containter">
-          <div class="card-container">
-            <div class="card">
-              <br/>
-              <img src="./img/Icons/email.png" > 
-              <h3>Email</h3>
-              <hr>
-    <p>lbsscaffold@gmail.com</p>
-            </div>
-          </div>
+    <main id="main">
+      <section class="banner banner--compact on-dark">
+        <div class="container">
+          <p class="banner__zh" lang="zh-Hans">联系我们</p>
+          <h1>Contact Terry Lee</h1>
+          <p class="banner__lead">WhatsApp or call Terry for a quote, or just to ask a question.</p>
+        </div>
+      </section>
 
-        <div class="card-container">
-          <div class="card">
-            <br/>
-            <a href="https://wa.me/6593841016?text=I+have+an+inquiry+for+a+scaffolding+project" target="_blank">
-            <img src="./img/Icons/whatsapp.png" alt="" ><h3>Text/Call Us</h3>
-          </a>
-            <hr>
-            <p>
-          (+65) 93841016 
-        </p>
+      <section class="section">
+        <div class="container contact-cards">
+          <div class="contact-card contact-card--primary on-dark">
+            <h2>WhatsApp</h2>
+            <p>The fastest way to reach Terry. Send photos of your house or site.</p>
+            <p class="number">(+65) 9384 1016</p>
+            <a class="btn btn--gold" href="https://wa.me/6593841016">WhatsApp Terry</a>
           </div>
-        </div>
-        </div>
-        </div>  
-        <div class="contactUs-child">
-          <h2>Contact Form</h2>         
-            <div class="form-container">
-              <div id="success-msg">
-                <b> Thank you for getting in touch!</b><br /><br />
-                We appreciate you contacting us! 
-                One of our colleagues will get back in touch with you soon! <br />
-                Have a great day! <br />
+          <div class="contact-card">
+            <h2>Call</h2>
+            <p>Speak to Terry Lee directly during opening hours.</p>
+            <p class="number">(+65) 9384 1016</p>
+            <a class="btn btn--outline-red" href="tel:+6593841016">Call 9384 1016</a>
+          </div>
+          <div class="contact-card">
+            <h2>Opening hours <span lang="zh-Hans">营业时间</span></h2>
+            <dl class="hours">
+              <div>
+                <dt>Mon–Fri</dt>
+                <dd>9 am–5 pm</dd>
               </div>
-              <iframe name="dummyframe" id="dummyframe" ></iframe>
-              <form
-                id="contact-form"
-                target="dummyframe"
-                method="POST"
-                action="https://script.google.com/macros/s/AKfycbxIT-4BaC8FOvNgfSxuagzbm8sHdpco-78PgmyQ0b-VW5pJl3It/exec"                onsubmit="Success()"
-                >
-                <div class="form-input">
-                  <label>Your Name</label>
-                  <input
-                    type="text"
-                    name="Name"
-                    placeholder="Enter your name"
-                    class="form-input-size"
-                    required
-                  />
-                </div>
-                <div class="form-input">
-                  <label>Enter Project Address</label>
-                  <input
-                    type="text"
-                    name="Address"
-                    placeholder="Enter the Project's Address"
-                    class="form-input-size"
-                    required
-                  />
-                </div>
-                <div class="form-input">
-                  <label>Start Date of Project</label>
-                  <input
-                    type="date"
-                    name="StartDate"
-                    class="form-input-size"
-                    required
-                  />
-                </div>
-                <div class="form-input">
-                  <label>End Date of Project</label>
-                  <input type="date" name="EndDate" class="form-input-size" required />
-                </div>
-                <div class="form-input">
-                  <label>Phone Number (+65)</label>
-                  <input
-                    type="tel"
-                    name="Contact"
-                    placeholder="E.g. 91234567"
-                    pattern="[8-9]{1}[0-9]{7}" required title="Enter a Valid Singapore Mobile Number"   class="form-input-size"
-                  />
-                </div>
-        
-                <div class="form-input">
-                  <p>Type of Staging</p>
-                  <select name="Type" id="dropdown" class="form-input-size" required>
-                    <option value="Timber">Timber Scaffolding</option>
-                    <option value="Alumninum">Alumninum Scaffolding</option>
-                    <option value="Opera">Chinese Opera House</option>
-                  </select>
-                </div>
-        
-                <div class="form-input">
-                  <p>Other Relevant Information</p>
-                  <textarea
-                    type="text"
-                    name="OtherInfo"
-                    placeholder="Any Other Relevant Information"
-                  ></textarea>
-                </div>
-        
-                <div class="form-input">
-                  <button type="submit" id="submit">Submit</button>
-                </div>
-        
-              </form>
-            </div>
+              <div>
+                <dt>Saturday</dt>
+                <dd>9 am–1 pm</dd>
+              </div>
+              <div>
+                <dt>Sun &amp; Public Holidays</dt>
+                <dd>Closed</dd>
+              </div>
+            </dl>
+            <p class="small-note">Mon–Fri hours exclude Public Holidays.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer on-dark">
+      <div class="site-footer__bottom">
+        <div class="container">
+          <span>© <span id="year">2026</span> Lee Baw Seng Chinese Opera Stage Builder™</span>
+          <span>bizSAFE Level 3, MOM ASC, SGMAS, SCAL</span>
         </div>
       </div>
-    <br/>
-    <br/>
-    
-    <footer>
-      <h1>
-        Lee Baw Seng Chinese Opera Stage Builder
-        <span id="year"></span>&trade;
-      </h1>
     </footer>
   </body>
 </html>
-<script>
-  // Set Footer Year
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>

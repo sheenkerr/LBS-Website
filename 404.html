@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // GitHub Pages shows this page at any missing address (even /a/b), so on the live site
+      // resolve the relative links below from the site root. Elsewhere (local preview) they stay relative.
+      if (location.hostname.endsWith("lbs-scaffold.com")) {
+        var base = document.createElement("base");
+        base.href = "/";
+        document.head.appendChild(base);
+        // The base would send "#main" to the home page, so point the skip link at this page
+        document.addEventListener("DOMContentLoaded", function () {
+          document.querySelector(".skip-link").href = location.pathname + "#main";
+        });
+      }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W9TP9BL82P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-W9TP9BL82P");
+    </script>
+    <script src="./scripts.js" defer></script>
+    <meta name="robots" content="noindex" />
+    <meta name="author" content="Sheen" />
+    <title>LBS | Page not found</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;700&family=Noto+Serif+SC:wght@600;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/Icons/logo.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="./">
+          <img src="./img/logo-136.png" alt="Lee Baw Seng logo" width="56" height="56" />
+          <span>Lee Baw Seng</span>
+        </a>
+        <nav aria-label="Main">
+          <ul class="nav">
+            <li><a href="./"><span>Home</span><span lang="zh-Hans">首页</span></a></li>
+            <li><a href="./Services"><span>Services</span><span lang="zh-Hans">服务</span></a></li>
+            <li><a href="./About"><span>About</span><span lang="zh-Hans">关于我们</span></a></li>
+            <li><a href="./Contact"><span>Contact</span><span lang="zh-Hans">联系我们</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="banner banner--compact on-dark">
+        <div class="container">
+          <p class="banner__zh" lang="zh-Hans">找不到页面</p>
+          <h1>This page doesn’t exist</h1>
+          <div class="btn-row">
+            <a class="btn btn--gold" href="./">Go to the home page</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer on-dark">
+      <div class="container site-footer__main">
+        <div class="site-footer__intro">
+          <p class="eyebrow" lang="zh-Hans">联系我们</p>
+          <h2>Speak with Terry Lee</h2>
+          <p class="site-footer__hours-label">Opening hours <span lang="zh-Hans">营业时间</span></p>
+          <p class="site-footer__hours">
+            Mon–Fri 9 am–5 pm<br />Sat 9 am–1 pm<br />Closed on Sundays and Public Holidays
+          </p>
+        </div>
+        <div class="site-footer__actions">
+          <a class="btn btn--gold" href="https://wa.me/6593841016">WhatsApp (+65) 9384 1016</a>
+          <a class="btn btn--outline-light" href="tel:+6593841016">Call (+65) 9384 1016</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="container">
+          <span>© <span id="year">2026</span> Lee Baw Seng Chinese Opera Stage Builder™</span>
+          <span>bizSAFE Level 3, MOM ASC, SGMAS, SCAL</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

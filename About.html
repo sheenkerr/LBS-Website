@@ -1,140 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <script src="./scripts.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-W9TP9BL82P"
-    ></script>
-    <script>
-      GAnalytics();
-    </script>
- <meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="LBS" />
-    <meta name="keywords" content="LBS" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W9TP9BL82P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-W9TP9BL82P");
+    </script>
+    <script src="./scripts.js" defer></script>
+    <meta
+      name="description"
+      content="Lee Baw Seng (LBS) is a scaffolding contractor in Singapore with roots in Chinese opera stage building. bizSAFE Level 3 and MOM Approved Scaffold Contractor."
+    />
     <meta name="author" content="Sheen" />
     <title>LBS | About Us</title>
+    <link rel="canonical" href="https://www.lbs-scaffold.com/About" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Lee Baw Seng Scaffolding" />
+    <meta property="og:title" content="About Lee Baw Seng" />
+    <meta
+      property="og:description"
+      content="Scaffolding contractor in Singapore, with roots in traditional Chinese opera stage building."
+    />
+    <meta property="og:url" content="https://www.lbs-scaffold.com/About" />
+    <meta property="og:image" content="https://www.lbs-scaffold.com/img/Specialized/Main.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;700&family=Noto+Serif+SC:wght@600;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./img/Icons/logo.ico" type="image/x-icon" />
   </head>
- <header>
-  <a href="./index">
-    <img class="logo-img" alt="logo" src="./img/logo.png" />
-  </a>
-  <nav>
-    <ul class="nav-links">
-      <li><a class="nav-link active" href="./About">About Us</a></li>
-      <li><a class="nav-link" href="./Services">Our Services</a></li>
-      <li><a class="nav-link" href="./Contact">Contact Us</a></li>
-      <li><a class="nav-link" href="./Estimator">Price Estimator</a></li>
-    </ul>
-  </nav>
-  <a
-    href="javascript:void(0);"
-    onclick="HamburgerMenu()"
-    class="hamburger-menu"
-  >
-    <img alt="HamburgerMenu" src="./img/menu.png" />
-  </a>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu">
-    <div class="mobile-menu-content">
-      <a
-        href="javascript:void(0);"
-        onclick="CloseHamburgerMenu()"
-        class="hamburger-menu"
-      >
-        <img alt="Close Menu" src="./img/close.png" />
-      </a>
-      <ul>
-        <li><a class="nav-link active" href="./About">About Us</a></li>
-        <li><a class="nav-link" href="./Services">Our Services</a></li>
-        <li><a class="nav-link" href="./Contact">Contact Us</a></li>
-        <li><a class="nav-link" href="./Estimator">Price Estimator</a></li>
-         </ul>
-    </div>
-  </div>
-</header>
-<div class="home-container">
-  <h1>About Us</h1>
-  <hr />
-  </div>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="./">
+          <img src="./img/logo-136.png" alt="Lee Baw Seng logo" width="56" height="56" />
+          <span>Lee Baw Seng</span>
+        </a>
+        <nav aria-label="Main">
+          <ul class="nav">
+            <li><a href="./"><span>Home</span><span lang="zh-Hans">首页</span></a></li>
+            <li><a href="./Services"><span>Services</span><span lang="zh-Hans">服务</span></a></li>
+            <li><a href="./About" aria-current="page"><span>About</span><span lang="zh-Hans">关于我们</span></a></li>
+            <li><a href="./Contact"><span>Contact</span><span lang="zh-Hans">联系我们</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <div class="services-container">
-    <h2>Who We Are</h2>
-    <p>We are ....</p>
-  </div>
+    <main id="main">
+      <section class="banner banner--compact on-dark">
+        <div class="container">
+          <p class="banner__zh" lang="zh-Hans">关于我们</p>
+          <h1>About Lee Baw Seng</h1>
+          <p class="banner__lead">Scaffolding contractor in Singapore, with roots in traditional Chinese opera stage building.</p>
+        </div>
+      </section>
 
-  <br/>
-<div class="galley-container">
-  <div class="cert">
-    <img
-    src="./img/Certs/BizSafe Level 3 Certificate.jpeg"
-  onclick="openModal();currentSlide(1)" class="hover-shadow cursor"  alt="BizSafe Level 3 Certificate" />
-  </div>
-  <div class="cert">
-  <img
-    src="./img/Certs/MOM Approved Scaffold Contractor (ASC) Cert.jpeg"
-  onclick="openModal();currentSlide(2)" class="hover-shadow cursor"  alt="MOM Approved Scaffold Contractor (ASC) Cert" />
-</div>
+      <section class="section" id="story">
+        <div class="container split">
+          <div>
+            <h2 class="section-title">Our story</h2>
+            <p class="body-copy">
+              Lee Beng Seng’s father learnt to build Chinese opera stages from master craftsmen from Fujian: wooden
+              poles, a few nails, and rope lashings strong enough to hold 400 kg. Beng Seng started helping him at 13 or
+              14, and father and son built opera stages together for about 40 years.
+            </p>
+            <p class="body-copy">
+              In the 1980s, the busiest years, they built at least 400 stages a year. From around 2000, metal stages took
+              over and wooden ones became rare, so the family moved into scaffolding and kept stage building as side work.
+            </p>
+            <p class="body-copy">
+              After their father passed away, the brothers Beng Seng and Terry took over the business, and scaffolding
+              rental is now our main work.
+            </p>
+          </div>
+          <figure class="video">
+            <div class="framed">
+              <!-- Thumbnail stands in for the YouTube player until tapped, so the page doesn't load YouTube up front -->
+              <button class="video__play" type="button" data-video="sZoJZOFnDiY" data-start="580" data-title="棚下的精彩：戏棚人生 — 8world" aria-label="Play the 8world feature about our story">
+                <img src="https://i.ytimg.com/vi/sZoJZOFnDiY/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" />
+                <span class="video__icon" aria-hidden="true">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><polygon points="7 4 20 12 7 20"></polygon></svg>
+                </span>
+              </button>
+            </div>
+            <figcaption>
+              Our story on 8world (<span lang="zh-Hans">棚下的精彩：戏棚人生</span>)
+              <a href="https://youtu.be/sZoJZOFnDiY?t=580">Open on YouTube</a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
 
-<div class="cert">
-  <img
-    src="./img/Certs/Safety & Green Management Assessor Scheme.jpg"
-  onclick="openModal();currentSlide(3)" class="hover-shadow cursor"  alt="Safety & Green Management Assessor Scheme" />
-</div>
-  <div class="cert">
-  <img
-    src="./img/Certs/The Singapore Contractors Association Limited (SCAL).jpg"
-  onclick="openModal();currentSlide(4)" class="hover-shadow cursor"  alt="The Singapore Contractors Association Limited (SCAL)" />
-  </div></div>
-</div>
+      <section class="section section--sand section--rule" id="certificates">
+        <div class="container">
+          <p class="eyebrow" lang="zh-Hans">证书</p>
+          <h2 class="section-title">Certificates</h2>
+          <p class="section-intro">Tap a certificate to see it larger <span lang="zh-Hans">（点击放大）</span>.</p>
+          <div class="cert-grid">
+            <figure>
+              <button class="gallery-item" type="button" data-gallery="certs" data-full="./img/Certs/BizSafe Level 3 Certificate.jpeg" data-label="bizSAFE Level 3" data-alt="bizSAFE Level 3 certificate" aria-label="View larger: bizSAFE Level 3 certificate">
+                <img src="./img/Certs/thumbs/bizsafe-level-3.jpg" alt="" width="503" height="640" loading="lazy" />
+              </button>
+              <figcaption>bizSAFE Level 3</figcaption>
+            </figure>
+            <figure>
+              <button class="gallery-item" type="button" data-gallery="certs" data-full="./img/Certs/MOM Approved Scaffold Contractor (ASC) Cert.jpeg" data-label="MOM Approved Scaffold Contractor (ASC)" data-alt="MOM Approved Scaffold Contractor certificate" aria-label="View larger: MOM Approved Scaffold Contractor certificate">
+                <img src="./img/Certs/thumbs/mom-asc.jpg" alt="" width="590" height="640" loading="lazy" />
+              </button>
+              <figcaption>MOM Approved Scaffold Contractor (ASC)</figcaption>
+            </figure>
+            <figure>
+              <button class="gallery-item" type="button" data-gallery="certs" data-full="./img/Certs/Safety &amp; Green Management Assessor Scheme.jpg" data-label="Safety &amp; Green Management Assessor Scheme (SGMAS)" data-alt="Safety and Green Management Assessor Scheme certificate" aria-label="View larger: Safety and Green Management Assessor Scheme certificate">
+                <img src="./img/Certs/thumbs/sgmas.jpg" alt="" width="453" height="640" loading="lazy" />
+              </button>
+              <figcaption>Safety &amp; Green Management Assessor Scheme (SGMAS)</figcaption>
+            </figure>
+            <figure>
+              <button class="gallery-item" type="button" data-gallery="certs" data-label="Member, The Singapore Contractors Association Limited (SCAL)" data-alt="The Singapore Contractors Association Limited membership certificate" aria-label="View larger: The Singapore Contractors Association Limited membership certificate">
+                <img src="./img/Certs/The Singapore Contractors Association Limited (SCAL).jpg" alt="" width="137" height="195" loading="lazy" />
+              </button>
+              <figcaption>Member, The Singapore Contractors Association Limited (SCAL)</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<!-- Modal -->
-<div id="imgModal" class="modal" >
-  <div class="certModal-content">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="imgSlides" >
-      <div class="numbertext">1 / 4</div>
-      <img src="./img/Certs/BizSafe Level 3 Certificate.jpeg" alt="BizSafe Level 3 Certificate"   >
-    </div>
-
-    <div class="imgSlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="./img/Certs/MOM Approved Scaffold Contractor (ASC) Cert.jpeg" alt="MOM Approved Scaffold Contractor (ASC) Certificate" >
-    </div>
-
-    <div class="imgSlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="./img/Certs/Safety & Green Management Assessor Scheme.jpg" alt="Safety & Green Management Assessor Scheme" >
-    </div>
-    
-    <div class="imgSlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="./img/Certs/The Singapore Contractors Association Limited (SCAL).jpg" alt="The Singapore Contractors Association Limited (SCAL)">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div> 
-  </div>   
-  </div>
-    <footer>
-      <h1>
-        Lee Baw Seng Chinese Opera Stage Builder
-        <span id="year"></span>&trade;
-      </h1>
+    <footer class="site-footer on-dark">
+      <div class="container site-footer__main">
+        <div class="site-footer__intro">
+          <p class="eyebrow" lang="zh-Hans">联系我们</p>
+          <h2>Speak with Terry Lee</h2>
+          <p class="site-footer__hours-label">Opening hours <span lang="zh-Hans">营业时间</span></p>
+          <p class="site-footer__hours">
+            Mon–Fri 9 am–5 pm<br />Sat 9 am–1 pm<br />Closed on Sundays and Public Holidays
+          </p>
+        </div>
+        <div class="site-footer__actions">
+          <a class="btn btn--gold" href="https://wa.me/6593841016">WhatsApp (+65) 9384 1016</a>
+          <a class="btn btn--outline-light" href="tel:+6593841016">Call (+65) 9384 1016</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="container">
+          <span>© <span id="year">2026</span> Lee Baw Seng Chinese Opera Stage Builder™</span>
+          <span>bizSAFE Level 3, MOM ASC, SGMAS, SCAL</span>
+        </div>
+      </div>
     </footer>
+
+    <div class="viewer on-dark" id="viewer" role="dialog" aria-modal="true" aria-labelledby="viewer-title" hidden>
+      <div class="viewer__top">
+        <p class="viewer__title" id="viewer-title">
+          <span data-viewer-label></span> · <span data-viewer-count></span>
+          <span class="viewer__hint">· Tap the photo to zoom <span lang="zh-Hans">点击放大</span></span>
+        </p>
+        <button class="viewer__close" type="button" data-viewer-close aria-label="Close viewer">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="viewer__stage">
+        <img class="viewer__img" alt="" />
+      </div>
+      <div class="viewer__nav">
+        <button class="btn btn--outline-light" type="button" data-viewer-prev>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          Previous
+        </button>
+        <button class="btn btn--gold" type="button" data-viewer-next>
+          Next
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
   </body>
 </html>
-<script>
-  // Set Footer Year
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>

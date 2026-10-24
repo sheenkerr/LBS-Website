@@ -1,114 +1,257 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <script src="./scripts.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-W9TP9BL82P"
-    ></script>
-    <script>
-      GAnalytics();
-    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="LBS" />
-    <meta name="keywords" content="LBS" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W9TP9BL82P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-W9TP9BL82P");
+    </script>
+    <script src="./scripts.js" defer></script>
+    <meta
+      name="description"
+      content="Lee Baw Seng (LBS) rents out timber, metal and aluminium mobile scaffolding for homes in Singapore. MOM Approved Scaffold Contractor."
+    />
     <meta name="author" content="Sheen" />
-    <title>LBS | Welcome</title>
+    <title>LBS | Scaffolding Rental Singapore</title>
+    <link rel="canonical" href="https://www.lbs-scaffold.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Lee Baw Seng Scaffolding" />
+    <meta property="og:title" content="Lee Baw Seng — Scaffolding rental in Singapore" />
+    <meta
+      property="og:description"
+      content="Timber, metal and aluminium mobile scaffolding for painting, roof repairs and aircon work on landed houses."
+    />
+    <meta property="og:url" content="https://www.lbs-scaffold.com/" />
+    <meta property="og:image" content="https://www.lbs-scaffold.com/img/Timber/Main.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;700&family=Noto+Serif+SC:wght@600;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./img/Icons/logo.ico" type="image/x-icon" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "GeneralContractor",
+        "name": "Lee Baw Seng Chinese Opera Stage Builder",
+        "alternateName": "LBS Scaffolding",
+        "url": "https://www.lbs-scaffold.com/",
+        "logo": "https://www.lbs-scaffold.com/img/logo.png",
+        "image": "https://www.lbs-scaffold.com/img/Timber/Main.jpg",
+        "description": "Timber, metal and aluminium mobile scaffolding rental for homes in Singapore.",
+        "telephone": "+65 9384 1016",
+        "areaServed": "Singapore",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "13:00"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
-    <header>
-      <a href="./index">
-        <img class="logo-img" alt="logo" src="./img/logo.png" />
-      </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a class="nav-link" href="./About">About Us</a></li>
-          <li><a class="nav-link" href="./Services">Our Services</a></li>
-          <li><a class="nav-link" href="./Contact">Contact Us</a></li>
-          <li><a class="nav-link" href="./Estimator">Price Estimator</a></li>
-        </ul>
-      </nav>
-      <a
-        href="javascript:void(0);"
-        onclick="HamburgerMenu()"
-        class="hamburger-menu"
-      >
-        <img alt="HamburgerMenu" src="./img/menu.png" />
-      </a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-      <!-- Mobile Menu -->
-      <div id="mobile-menu">
-        <div class="mobile-menu-content">
-          <a
-            href="javascript:void(0);"
-            onclick="CloseHamburgerMenu()"
-            class="hamburger-menu"
-          >
-            <img alt="Close Menu" src="./img/close.png" />
-          </a>
-          <ul>
-            <li><a class="nav-link" href="./About">About Us</a></li>
-            <li><a class="nav-link" href="./Services">Our Services</a></li>
-            <li><a class="nav-link" href="./Contact">Contact Us</a></li>
-            <li><a class="nav-link" href="./Estimator">Price Estimator</a></li>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="./">
+          <img src="./img/logo-136.png" alt="Lee Baw Seng logo" width="56" height="56" />
+          <span>Lee Baw Seng</span>
+        </a>
+        <nav aria-label="Main">
+          <ul class="nav">
+            <li><a href="./" aria-current="page"><span>Home</span><span lang="zh-Hans">首页</span></a></li>
+            <li><a href="./Services"><span>Services</span><span lang="zh-Hans">服务</span></a></li>
+            <li><a href="./About"><span>About</span><span lang="zh-Hans">关于我们</span></a></li>
+            <li><a href="./Contact"><span>Contact</span><span lang="zh-Hans">联系我们</span></a></li>
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
-    <main>
-      <div class="home-container">
-        <h1>Lee Baw Seng Chinese Opera Stage Builder</h1>
-        <hr />
-        <p>Scaffolding Rental Services (Core Services)</p>
-        <p>
-          <b> Office hours:</b> <br />
-          Monday to Friday (excluding Public Holidays): 9 am to 5 pm <br />
-          Saturday: 9 am to 1 pm
-        </p>
-        <br />
-        <a href="./Contact" class="button">Get Quotation</a>
-      </div>
 
-      <div class="services-container">
-        <h2>Our Services</h2>
-        <p>Description of Services</p>
-      </div>
-      <br />
-      <div class="services-galley">
-        <a href="./Services#timber" class="service">
-          <img src="./img/Timber/d.jpg" alt="" />
-          <p>Specialized Timber Scaffolding</p>
-        </a>
-        <br />
-        <a href="./Services#special" class="service">
-          <img src="./img/Specialized/d.jpg" alt="" />
-          <p>Specialized Services (Chinese Opera Stage)</p>
-        </a>
+    <main id="main">
+      <section class="banner on-dark">
+        <div class="container">
+          <p class="banner__zh" lang="zh-Hans">棚架出租</p>
+          <h1>Scaffold rental services in Singapore</h1>
+          <p class="banner__lead">
+            Timber, metal and aluminium mobile scaffolding for painting, roof repairs and aircon work on landed houses.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn--gold" href="https://wa.me/6593841016">WhatsApp Terry</a>
+            <a class="btn btn--outline-light" href="tel:+6593841016">Call 9384 1016</a>
+          </div>
+        </div>
+      </section>
 
-        <br />
-        <a href="./Services#Aluminium" class="service">
-          <img src="./img/Al/d.jpg" alt="" />
-          <p>Aluminium Mobile Scaffolding</p>
-        </a>
-      </div>
-      <br />
+      <section class="section" id="scaffold">
+        <div class="container">
+          <a class="heading-link" href="./Services">
+            <p class="eyebrow" lang="zh-Hans">棚架</p>
+            <h2 class="section-title">Our scaffolding</h2>
+          </a>
+          <ul class="service-list">
+            <li>
+              <a class="service-row" href="./Services#timber">
+                <span class="framed"><img class="photo" src="./img/Timber/Main.jpg" alt="" width="281" height="210" loading="lazy" /></span>
+                <span>
+                  <span class="service-row__title">Timber scaffolding <span lang="zh-Hans">木棚架</span></span>
+                  <span class="service-row__text">
+                    For painting, roof repairs and aircon cleaning on landed houses.
+                  </span>
+                  <span class="service-row__more">
+                    See timber projects
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="service-row" href="./Services#metal">
+                <span class="framed service-row__plate" aria-hidden="true"><span lang="zh-Hans">铁</span></span>
+                <span>
+                  <span class="service-row__title">Metal scaffolding <span lang="zh-Hans">铁棚架</span></span>
+                  <span class="service-row__text">
+                    For jobs where timber isn’t the right fit.
+                  </span>
+                  <span class="service-row__more">
+                    About metal scaffolding
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="service-row" href="./Services#aluminium">
+                <span class="framed"><img class="photo" src="./img/Al/Main.jpg" alt="" width="229" height="305" loading="lazy" /></span>
+                <span>
+                  <span class="service-row__title">Aluminium mobile towers <span lang="zh-Hans">铝棚架</span></span>
+                  <span class="service-row__text">
+                    Mobile towers with a 4 m platform, for short and indoor jobs.
+                  </span>
+                  <span class="service-row__more">
+                    See aluminium projects
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  </span>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <div class="cert-strip">
+            <h3>Licensed and certified</h3>
+            <p class="section-intro">Tap a certificate to see it larger <span lang="zh-Hans">（点击放大）</span>.</p>
+            <div class="cert-grid">
+              <figure>
+                <button class="gallery-item" type="button" data-gallery="certs" data-full="./img/Certs/BizSafe Level 3 Certificate.jpeg" data-label="bizSAFE Level 3" data-alt="bizSAFE Level 3 certificate" aria-label="View larger: bizSAFE Level 3 certificate">
+                  <img src="./img/Certs/thumbs/bizsafe-level-3.jpg" alt="" width="503" height="640" loading="lazy" />
+                </button>
+                <figcaption>bizSAFE Level 3</figcaption>
+              </figure>
+              <figure>
+                <button class="gallery-item" type="button" data-gallery="certs" data-full="./img/Certs/MOM Approved Scaffold Contractor (ASC) Cert.jpeg" data-label="MOM Approved Scaffold Contractor (ASC)" data-alt="MOM Approved Scaffold Contractor certificate" aria-label="View larger: MOM Approved Scaffold Contractor certificate">
+                  <img src="./img/Certs/thumbs/mom-asc.jpg" alt="" width="590" height="640" loading="lazy" />
+                </button>
+                <figcaption>MOM Approved Scaffold Contractor (ASC)</figcaption>
+              </figure>
+              <figure>
+                <button class="gallery-item" type="button" data-gallery="certs" data-full="./img/Certs/Safety &amp; Green Management Assessor Scheme.jpg" data-label="Safety &amp; Green Management Assessor Scheme (SGMAS)" data-alt="Safety and Green Management Assessor Scheme certificate" aria-label="View larger: Safety and Green Management Assessor Scheme certificate">
+                  <img src="./img/Certs/thumbs/sgmas.jpg" alt="" width="453" height="640" loading="lazy" />
+                </button>
+                <figcaption>Safety &amp; Green Management Assessor Scheme (SGMAS)</figcaption>
+              </figure>
+              <figure>
+                <button class="gallery-item" type="button" data-gallery="certs" data-label="Member, The Singapore Contractors Association Limited (SCAL)" data-alt="The Singapore Contractors Association Limited membership certificate" aria-label="View larger: The Singapore Contractors Association Limited membership certificate">
+                  <img src="./img/Certs/The Singapore Contractors Association Limited (SCAL).jpg" alt="" width="137" height="195" loading="lazy" />
+                </button>
+                <figcaption>Member, The Singapore Contractors Association Limited (SCAL)</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--sand section--rule" id="heritage">
+        <div class="container split">
+          <div>
+            <button class="gallery-item framed" type="button" data-gallery="heritage" data-label="Opera Stages 戏台" data-alt="A traditional wooden Chinese opera stage built by the Lee family" aria-label="View larger: a traditional wooden Chinese opera stage built by the Lee family">
+              <img class="photo" src="./img/Specialized/Main.jpg" alt="" width="421" height="255" loading="lazy" />
+            </button>
+          </div>
+          <div>
+            <a class="heading-link" href="./About#story">
+              <p class="eyebrow" lang="zh-Hans">戏台</p>
+              <h2 class="section-title">Where we started: Chinese opera stages</h2>
+            </a>
+            <a class="btn btn--outline-red" href="./About#story">Read our story</a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <h1>
-        Lee Baw Seng Chinese Opera Stage Builder
-        <span id="year"></span>&trade;
-      </h1>
-
+    <footer class="site-footer on-dark">
+      <div class="container site-footer__main">
+        <div class="site-footer__intro">
+          <p class="eyebrow" lang="zh-Hans">联系我们</p>
+          <h2>Speak with Terry Lee</h2>
+          <p class="site-footer__hours-label">Opening hours <span lang="zh-Hans">营业时间</span></p>
+          <p class="site-footer__hours">
+            Mon–Fri 9 am–5 pm<br />Sat 9 am–1 pm<br />Closed on Sundays and Public Holidays
+          </p>
+        </div>
+        <div class="site-footer__actions">
+          <a class="btn btn--gold" href="https://wa.me/6593841016">WhatsApp (+65) 9384 1016</a>
+          <a class="btn btn--outline-light" href="tel:+6593841016">Call (+65) 9384 1016</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="container">
+          <span>© <span id="year">2026</span> Lee Baw Seng Chinese Opera Stage Builder™</span>
+          <span>bizSAFE Level 3, MOM ASC, SGMAS, SCAL</span>
+        </div>
+      </div>
     </footer>
+
+    <div class="viewer on-dark" id="viewer" role="dialog" aria-modal="true" aria-labelledby="viewer-title" hidden>
+      <div class="viewer__top">
+        <p class="viewer__title" id="viewer-title">
+          <span data-viewer-label></span> · <span data-viewer-count></span>
+          <span class="viewer__hint">· Tap the photo to zoom <span lang="zh-Hans">点击放大</span></span>
+        </p>
+        <button class="viewer__close" type="button" data-viewer-close aria-label="Close viewer">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="viewer__stage">
+        <img class="viewer__img" alt="" />
+      </div>
+      <div class="viewer__nav">
+        <button class="btn btn--outline-light" type="button" data-viewer-prev>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          Previous
+        </button>
+        <button class="btn btn--gold" type="button" data-viewer-next>
+          Next
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
   </body>
 </html>
-<script>
-  // Set Footer Year
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
