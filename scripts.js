@@ -5,7 +5,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   initViewer();
   initVideo();
+  initContactTracking();
 });
+
+// Google Analytics: record WhatsApp and call taps as "contact" events (the enquiries that matter)
+function initContactTracking() {
+  document.addEventListener("click", function (e) {
+    var link = e.target.closest('a[href^="tel:"], a[href*="wa.me/"]');
+    if (!link || typeof gtag !== "function") return;
+    gtag("event", "contact", {
+      method: link.href.indexOf("tel:") === 0 ? "phone" : "whatsapp",
+      page_location: location.href,
+    });
+  });
+}
 
 // Video thumbnail: swap in the YouTube player only when tapped
 function initVideo() {
